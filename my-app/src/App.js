@@ -2,6 +2,18 @@ import React , { useState, useRef } from 'react';// Import React
 import { excerciseComplete , exportTheValue } from './screens/about.js';
 import './App.css'; // Import CSS file for styling
 
+
+
+// Example functions are in 'screens' folder in 'about.js'
+
+// To run 'App.js' type 'npm install' in terminal of vscode
+/* after installing , there will be folder created with name 'node_modules'
+ which contains the libraries to run REACT App or 'App.js'
+*/
+// Now type 'npm start' in terminal to start the server .
+// Happy Hacking
+
+
 function App() {
   function toggleMode(event){
      
@@ -117,7 +129,7 @@ function App() {
           {/* Drop Down Menu */}
             <label>Exercise No </label>
              <select className='numberSelect' onChange={checkTOForward}>
-              {Array(50).fill(0).map((_,index)=> (
+              {Array(10).fill(0).map((_,index)=> (
                 <option key ={index+1} value={index+1}>{index+1}</option>
               ))}
              </select>
